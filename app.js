@@ -79,8 +79,8 @@ testArray = [2,3,4];
 function sumArray(testArray){
   summed = sum(sum(testArray[0],testArray[1])[0],testArray[2])[0];
   var summedSays = (testArray + ' was passed in as an array of numbers, and ' + summed + ' is their sum.');
-  console.log('2,3,4 was passed in as an array of numbers, and 9 is their sum.');
-  console.log(summedSays);
+  // console.log('2,3,4 was passed in as an array of numbers, and 9 is their sum.');
+  // console.log(summedSays);
   return [summed, summedSays];
 }
 
@@ -102,13 +102,17 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 
-// // function multiplyArray(testArray) {
-//
-// };
+function multiplyArray(testArray) {
+  multed = multiply(multiply(testArray[0],testArray[1])[0],testArray[2])[0];
+  multedSays = ('The numbers ' + testArray + ' have a product of ' + multed + '.');
+  // console.log(multedSays);
+  // console.log('The numbers 2,3,4 have a product of 24.');
+  return [multed, multedSays];
+};
 
 // Here is the test for multiplyArray(); uncomment it to run it
 
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. Submit the link to the repo via Canvas.
 
